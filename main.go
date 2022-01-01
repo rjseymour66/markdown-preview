@@ -14,18 +14,16 @@ import (
 
 const (
 	header = `<!DOCTYPE html>
-	<html>
-		<head>
-			<meta http-equiv="content-type" content="text/html; charset=utf-8">
-			<title>Markdown Preview Tool</title>
-		</head>
-	</html>
-	<body>
-	`
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Markdown Preview Tool</title>
+</head>
+<body>
+`
 	footer = `
-	</body>
-	</html>
-	`
+</body>
+</html>`
 )
 
 func main() {
@@ -45,6 +43,7 @@ func main() {
 	}
 }
 
+// Read the md file into []byte and turn it into HTML
 func run(filename string) error {
 	// Read all the data from the input file into []byte and check for errors
 	input, err := ioutil.ReadFile(filename)
