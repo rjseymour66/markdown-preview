@@ -10,3 +10,6 @@ This is an example Markdown file to test the preview tool
 ```
 go get github.com/user/program
 ```
+## Test the autopreview:
+
+I wonder if this is going to work, too. It did! This is really cool!
